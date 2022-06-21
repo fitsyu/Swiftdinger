@@ -33,6 +33,17 @@ extension DailyScrum {
             self.name = name
         }
     }
+    
+    struct Data {
+        var title: String = ""
+        var atttendees: [Attendee] = []
+        var lengthInMinutes: Double = 5 // To capture slider's value which is a Double
+        var theme: Theme = .teal
+    }
+    
+    var data: Data {
+        Data(title: self.title, atttendees: self.attendees, lengthInMinutes: Double(self.lengthInMinutes), theme: self.theme)
+    }
 }
 
 extension DailyScrum {
