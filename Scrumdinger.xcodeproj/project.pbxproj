@@ -23,6 +23,8 @@
 		E86F91C8285EF30B00E36C3D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86F91C7285EF30B00E36C3D /* CardView.swift */; };
 		E86F91CA285EF55F00E36C3D /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86F91C9285EF55F00E36C3D /* TrailingIconLabelStyle.swift */; };
 		E86F91CC285EFBEF00E36C3D /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86F91CB285EFBEF00E36C3D /* ScrumsView.swift */; };
+		E8850C5628681E2C00378FD1 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8850C5528681E2C00378FD1 /* AVPlayer+Ding.swift */; };
+		E8850C5928681EF600378FD1 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = E8850C5828681EF600378FD1 /* ding.wav */; };
 		E88C8C6A2860140E00E24845 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88C8C692860140E00E24845 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		E86F91C7285EF30B00E36C3D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E86F91C9285EF55F00E36C3D /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		E86F91CB285EFBEF00E36C3D /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
+		E8850C5528681E2C00378FD1 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
+		E8850C5828681EF600378FD1 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		E88C8C692860140E00E24845 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +81,7 @@
 		E86F91B3285EBFF500E36C3D /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
+				E8850C5728681EF600378FD1 /* Resources */,
 				E86F91C2285EEFE800E36C3D /* Models */,
 				E86F91B4285EBFF500E36C3D /* ScrumdingerApp.swift */,
 				E83A21452866F7C1000CCF69 /* MeetingHeaderView.swift */,
@@ -109,9 +114,18 @@
 			children = (
 				E86F91C3285EEFFC00E36C3D /* Theme.swift */,
 				E83A21492866FDC2000CCF69 /* ScrumTimer.swift */,
+				E8850C5528681E2C00378FD1 /* AVPlayer+Ding.swift */,
 				E86F91C5285EF14100E36C3D /* DailyScrum.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E8850C5728681EF600378FD1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E8850C5828681EF600378FD1 /* ding.wav */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8850C5928681EF600378FD1 /* ding.wav in Resources */,
 				E86F91BC285EBFF600E36C3D /* Preview Assets.xcassets in Resources */,
 				E86F91B9285EBFF600E36C3D /* Assets.xcassets in Resources */,
 			);
@@ -199,6 +214,7 @@
 				E86F91B5285EBFF500E36C3D /* ScrumdingerApp.swift in Sources */,
 				E83A21422863B585000CCF69 /* ThemeView.swift in Sources */,
 				E86F91C8285EF30B00E36C3D /* CardView.swift in Sources */,
+				E8850C5628681E2C00378FD1 /* AVPlayer+Ding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,7 +35,7 @@ enum Theme: String, CaseIterable, Identifiable {
     }
     
     var mainColor: Color {
-        Color(rawValue)
+        Color.teal
     }
     
     var name: String {
